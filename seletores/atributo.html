@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*Atributo entre []*/
+    [title] {
+      color: red;
+    }
+    /*atrib=value*/
+    [title = "Netflix"] {
+      color: pink;
+    }
+    /*Pesquisa a palavra exata ou dentro do valor separado por espaço*/
+    [title~="Streaming"] {
+      background: darkcyan;
+    }
+     /*Pesquisa a palavra exata ou a palavra seguido por um hífen*/
+    [title|="Streaming"] {
+      background: darkcyan;
+    }
+     /*Somente http o prefixo*/
+    [href^="http://"] {
+      background: rgb(58, 72, 72);
+    }
+     /*Procura sufixo, se colocar algo apos o login, nao irá funcionar*/
+    [href$="login"] {
+      background: rgb(255, 0, 111);
+    }
+    /*Procura qualquer palavra independente*/
+    [href*="login"] {
+      background: rgb(211, 194, 0);
+    }
+
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a title="Streaming Netflix" href="https://www.login.netflix.com">Netflix</a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a title="Streaming" href="http://www.netflix.com/login">Netflix</a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a title="Streaming-Netflix" href="https://www.netflix.com">Netflix</a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a href="https://www.netflix.com">Netflix</a>
+    </li>
+  </ul>
+</body>
+</html>
