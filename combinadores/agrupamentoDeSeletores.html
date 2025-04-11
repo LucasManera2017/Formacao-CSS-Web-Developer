@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1, p, div {
+      color: red;
+      background: lightblue;
+    }
+
+    .texto, h1,#link-referencia {
+      color: black;
+    }
+
+    h1, [id^="botao"]{
+      background: blue;
+    }
+
+    /*Seleciona apenas a class texto do p*/
+    p.texto {
+      color: rgb(98, 255, 0); 
+    }
+  </style>
+</head>
+<body>
+  <h1>Agrupamento de Seletores</h1>
+  <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, obcaecati!</p>
+  <p class="teste">teste</p>
+  <div class="texto">Assim, não precisamos ficar copiando e colando</div>
+
+  <br><br>
+
+  <a id="link-referencia" href="#">Clique para ver a documentação</a>
+  <br><br>
+  <a id="link-contato" href="#">Clique para entrar em contato</a>
+  <br><br>
+  <a id="botao-voltar" href="#">Voltar</a>
+
+  <br><br>
+  <button type="submit" id="botao">Fechar a página</button>
+</body>
+</html>
