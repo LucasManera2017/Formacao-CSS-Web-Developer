@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+       /*
+    Combinadores: qual tipo de relação entre 2 seletores. 
+    1. Combinador descendente (espaço)
+    2. Combinador filho (>)
+    4. Combinador irmão adjacente (+)
+    5. Combinador irmão em geral (~)
+
+    [SELETOR] [COMBINADOR] [SELETOR]
+    */
+
+    /*
+    Apenas Elemento 05
+    .fundo-verde span + p {
+      background: lightgreen;
+    }
+    
+    Elemento 05 e 06
+    .fundo-verde span ~ p {
+      background: lightgreen;
+    }
+
+    Elemento 02, 04, 05 e 06
+    .fundo-verde p ~ p {
+      background: lightgreen;
+    }
+
+     Elemento 02, 04, 05 e 06
+     .fundo-verde p + p {
+      background: lightgreen;
+    }
+    */
+
+    /*Elemento 02, 04 e 06*/
+    .fundo-verde p + p {
+     background: lightgreen;
+   }
+
+
+  </style>
+</head>
+<body>
+  <div class="fundo-verde">
+    <p>Elemento 01</p>
+    <p>Elemento 02</p>
+    <span>
+      <p>Elemento 03</p>
+      <p>Elemento 04</p>
+    </span>
+    <p>Elemento 05</p>
+    <p>Elemento 06</p>
+  </div>
+</body>
+</html>
