@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      background: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 500px;
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr, 2fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .item-01{
+      border: 1px solid black;
+      background-color: greenyellow;
+    }
+    .item-02{
+      border: 1px solid black;
+      background-color: red;
+    }
+    .item-03{
+      border: 1px solid black;
+      background-color: yellow;
+    }
+    .item-04{
+      border: 1px solid black;
+      background-color: palevioletred;
+    }
+    .item-05{
+      border: 1px solid black;
+      background-color: rosybrown;
+    }
+    .item-06{
+      border: 1px solid black;
+      background-color: paleturquoise;
+    }
+    .item-07{
+      border: 1px solid black;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item-01">Item 01</div>
+    <div class="item-02">Item 02</div>
+    <div class="item-03">Item 03</div>
+    <div class="item-04">Item 04</div>
+    <div class="item-05">Item 05</div>
+    <div class="item-06">Item 06</div>
+    <div class="item-07">Item 07</div>
+  </div>
+  <!-- grid-template-columns
+       grid-template-rows 
+       fr representa a fração do container 
+  -->
+  
+</body>
+</html>
