@@ -10,15 +10,8 @@
       background: black;
       padding: 10px;
       margin-bottom: 20px;
-      height: 500px;
       display: grid; 
-      /*grid-template-columns: repeat(3, 1fr 2fr);*/
-      /*grid-template-columns: repeat(auto-fill, 100px); Maximo de elementos com 100px na mesma linha*/
-      /*grid-template-columns: repeat(auto-fit, 100px); Quando não tem itens suficientes as faixas serão recolhidas*/
-      /*grid-template-columns: min-content; irá pegar a largura da maior palvra de um item*/
-      /*grid-template-columns: min-content; irá pegar a largura do maior conteúdo*/
-      grid-template-columns: auto auto auto;/*Se eu colocar uma coluna fr, irá bugar o tamanho */
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, minmax(130px, auto));
     }
 
     .item-01{
@@ -62,10 +55,10 @@
     <div class="item-06">Item 06</div>
     <div class="item-07">Item 07</div>
   </div>
-  <!-- grid-template-columns
-       grid-template-rows 
-       fr representa a fração do container 
-  -->
+   <!-- Implítico
+
+  Quando linhas são criadas por si sós, seria o grid implítico, o tamanho dessas colunas e linhas são padrões de acordo com o conteúdo dentro delas -->
   
 </body>
 </html>
+
