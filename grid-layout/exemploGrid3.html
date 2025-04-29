@@ -9,8 +9,8 @@
       border: 2px solid black;
       display: grid;
       
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+      grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
     }
 
     .item {
@@ -20,8 +20,8 @@
 
     .selected {
       background-color: aqua;
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
+      grid-column: segunda-linha-col / terceira-linha-col;
+      grid-row: linha-meio / linha-fim;
     }
   </style>
 </head>
