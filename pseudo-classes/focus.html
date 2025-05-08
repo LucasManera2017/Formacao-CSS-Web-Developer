@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      display: block;
+      margin: 12px; 
+      font-size: 1.5rem;
+    }
+
+    input, select {
+      font-size: 1.5rem;
+    }
+
+    button {
+      display: block;
+      margin: 12px; 
+      font-size: 1.5rem;
+    }
+
+    input:focus {
+      outline: 2px dashed blue;
+    }
+
+    select:focus {
+      background-color: yellow;
+    }
+
+    button:focus-visible {
+      outline: 3px solid red;
+      outline-offset: 2px;
+      background-color: palevioletred;
+      color: aliceblue          ;
+    }
+
+    label:focus-within {
+      font-weight: bold;
+    } /*Descendente, o filho recebe*/
+
+    /*focus-visible se navegar no teclado vai funcionar, mas se clicar não vai funcionar*/
+
+  </style>
+</head>
+<body>
+  <h1>Focus</h1>
+  <form>
+    <p>Faça seu pedido! Escolha o sabor do sorvete que deseja.</p>
+
+    <label>
+      Nome Completo: 
+      <input name="nome" type="text">
+    </label>
+    <label>
+      Sabor do sorvete:
+      <select name="sabor">
+        <option value="chocolate">Chocolate</option>
+        <option value="morango">Morango</option>
+        <option value="doce-leite">Doce de leite</option>
+        <option value="abacaxi">Abacaxi</option>
+      </select>
+    </label>
+    <button type="submit">Finalizar Pedido</button>
+  </form>
+</body>
+</html>
