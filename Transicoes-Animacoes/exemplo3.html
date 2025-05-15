@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, rgb(34,34,34) 0%, rgb(34,13,80) 50%,rgb(74,153,230) 100%);
+    }
+
+    img {
+      animation: take-off-rocket 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes take-off-rocket {
+      0% {
+        transform: translateY(20vh);
+      }
+      50% {
+        transform: translateY(-80vh);
+      }
+      100% {
+        transform: translateY(20vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://static.vecteezy.com/system/resources/previews/039/324/430/non_2x/startup-rocket-3d-render-free-png.png" width="300">
+</body>
+</html>

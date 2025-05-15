@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+    body{
+      margin:0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      perspective: 300px;
+      perspective-origin: right;
+    }
+
+    .box {
+      background: linear-gradient(90deg, #FC466B 0%, blue 100%);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+
+      transform: rotateY(30deg);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 
+    Permite mover um item de acordo com o plano cartesiano.
+    
+    Primeiro eixo x e depois y
+  
+  -->
+
+  <div class="box"></div>
+  
+</body>
+</html>

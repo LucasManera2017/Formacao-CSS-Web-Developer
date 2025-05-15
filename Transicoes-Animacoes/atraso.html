@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+    body{
+      margin:0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      perspective: 300px;
+      
+      
+    }
+
+    .box {
+      background: #FC466B ;
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+
+      animation-name: exemplo;
+      animation-duration: 5s;
+      /*animation-delay: -5s;*/
+      animation-iteration-count: infinite;/*animacao acontece 3x e pode ser infinit*/
+    }
+
+    @keyframes exemplo {
+      0% {
+        background: palegreen;
+      } 50% {
+        background: darkblue;
+      }
+      
+      100% {
+        background: purple;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    Permite mover um item de acordo com o plano cartesiano.
+    
+    Primeiro eixo x e depois y
+  
+  -->
+
+  <div class="box"></div>
+  
+</body>
+</html>
